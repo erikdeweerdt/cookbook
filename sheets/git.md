@@ -1,6 +1,10 @@
 # Git
 
 ## Undoing things
+### Undo uncommitted changes to a single file
+```bash
+git checkout -- <file>
+```
 ### Undo commit
 To just undo a local commit:
 ```bash
@@ -36,3 +40,12 @@ git branch --unset-upstream
 # push the new branch (with -u to set up tracking)
 git push -u origin new-branch-name
 ```
+
+## Tags
+### Push commits _and_ tags in one go
+`git push` only pushes changes, while `git push --tags` only pushes tags. `git push --follow-tags` only pushes annotated tags.
+To push both:
+```bash
+git push --atomic origin <branch> <tag> [...]
+```
+Any number of branches and tags can be pushed. `--atomic` ensures that the command will not partially succeed if one of the pushed references fails.
