@@ -1,4 +1,4 @@
-# Cheat Sheets
+# Cookbook
 
 This repository contains a selection of notes about various tools & technologies. It's basically a notebook.
 
