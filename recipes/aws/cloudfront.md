@@ -10,3 +10,4 @@ If you don't do this, CloudFront will bypass the router and return a 403/404 bec
 Note that a 403 caused by a WAF defined on the distribution will be handled in the same way.
 I.e. if you redirect a 403 to `/index.html`, an access denied by the WAF _will_ return `index.html`.
 Custom error pages essentially allow you to poke holes in the firewall.
+The [documentation](https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html) confirms this behavior.
