@@ -4,7 +4,7 @@ Although you can use cURL to query the cluster, a tool like [cerebro](https://gi
 
 ## Cluster maintenance
 
-Get information about shard allocation, including the reasons for any failures:
+[Get information about shard allocation](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-allocation-explain.html), including the reasons for any failures:
 `GET _cluster/allocation/explain`
 ```json
 {
